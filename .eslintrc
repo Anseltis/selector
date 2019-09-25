@@ -1,0 +1,28 @@
+{
+    "extends": [
+        "eslint:recommended",
+        "prettier",
+        "plugin:prettier/recommended"
+    ],
+    "env": {
+        "jest": true,
+        "browser": true,
+        "es6": true,
+        "node": true
+    },
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true,
+            "modules": true
+        }
+    },
+    "rules": {
+        "import/no-extraneous-dependencies": 0,
+        "import/prefer-default-export": 0,
+        "linebreak-style": ["warn", "windows"],
+        "indent": ["error", 4, { "SwitchCase": 1 }],
+        "eslint-disable-next-line": 0,
+        "prettier/prettier": "warn"
+    }
+}
